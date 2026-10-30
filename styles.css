@@ -1,0 +1,548 @@
+/* ==========================================================================
+   BITES - REPOSTERÍA ARTESANAL
+   Estilos CSS3 Puros (Sin Frameworks) - Paleta Beige & Marrones
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --beige-claro: #FAF6F0;
+    --beige-medio: #F3ECE1;
+    --beige-arena: #E4D5C7;
+    --marron-suave: #A47148;
+    --marron-medio: #5C3A21;
+    --marron-oscuro: #3A2212;
+    --texto-principal: #2D1B0E;
+    --texto-secundario: #6E5039;
+    --blanco: #FFFFFF;
+    --sombra: 0 8px 24px rgba(58, 34, 18, 0.08);
+    --transicion: all 0.35s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--beige-claro);
+    color: var(--texto-principal);
+    line-height: 1.7;
+    /* Textura sutil de grano en tonos beige */
+    background-image: radial-gradient(rgba(164, 113, 72, 0.07) 1px, transparent 0);
+    background-size: 24px 24px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--marron-oscuro);
+    line-height: 1.3;
+}
+
+/* ==========================================================================
+   NAVBAR (MENÚ DE NAVEGACIÓN UNIFORME Y JERÁRQUICO)
+   ========================================================================== */
+.header-principal {
+    background-color: var(--marron-oscuro);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--beige-claro);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--marron-suave);
+    font-style: italic;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    display: block;
+    letter-spacing: 1px;
+    margin-top: -6px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+}
+
+.nav-links li a {
+    color: var(--beige-medio);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    transition: var(--transicion);
+}
+
+.nav-links li a:hover,
+.nav-links li a.activo {
+    background-color: var(--marron-suave);
+    color: var(--blanco);
+}
+
+/* ==========================================================================
+   SLIDER / CARRUSEL DE IMÁGENES
+   ========================================================================== */
+.slider-contenedor {
+    position: relative;
+    max-width: 100%;
+    height: 540px;
+    overflow: hidden;
+    background-color: var(--marron-oscuro);
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide.activo {
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.45);
+}
+
+.slide-contenido {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 750px;
+    padding: 2rem;
+    color: var(--beige-claro);
+}
+
+.slide-contenido h1 {
+    color: var(--beige-claro);
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.slide-contenido p {
+    font-size: 1.15rem;
+    margin-bottom: 1.8rem;
+    color: var(--beige-arena);
+}
+
+.btn-principal {
+    display: inline-block;
+    background-color: var(--marron-suave);
+    color: var(--blanco);
+    padding: 0.85rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transicion);
+    border: 2px solid var(--marron-suave);
+}
+
+.btn-principal:hover {
+    background-color: transparent;
+    color: var(--beige-claro);
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    background-color: rgba(250, 246, 240, 0.2);
+    color: var(--beige-claro);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.slider-btn:hover {
+    background-color: var(--marron-suave);
+}
+
+.slider-btn.prev {
+    left: 25px;
+}
+
+.slider-btn.next {
+    right: 25px;
+}
+
+.slider-indicadores {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    gap: 10px;
+}
+
+.indicador {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(250, 246, 240, 0.4);
+    cursor: pointer;
+    border: none;
+    transition: var(--transicion);
+}
+
+.indicador.activo {
+    background-color: var(--marron-suave);
+    transform: scale(1.2);
+}
+
+/* ==========================================================================
+   ENCABEZADO PÁGINAS SECUNDARIAS
+   ========================================================================== */
+.banner-secundario {
+    background: linear-gradient(rgba(58, 34, 18, 0.75), rgba(58, 34, 18, 0.75)),
+                url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=80&fm=webp') center/cover;
+    padding: 4.5rem 2rem;
+    text-align: center;
+    color: var(--beige-claro);
+}
+
+.banner-secundario h1 {
+    color: var(--beige-claro);
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner-secundario p {
+    color: var(--beige-arena);
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   SECCIONES DE INFORMACIÓN (IMAGEN + TEXTO)
+   ========================================================================== */
+.contenedor {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 4.5rem 2rem;
+}
+
+.seccion-alterna {
+    background-color: var(--beige-medio);
+    border-top: 1px solid var(--beige-arena);
+    border-bottom: 1px solid var(--beige-arena);
+}
+
+.bloque-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.bloque-info.invertido .info-imagen {
+    order: 2;
+}
+
+.bloque-info.invertido .info-texto {
+    order: 1;
+}
+
+.etiqueta-superior {
+    display: inline-block;
+    background-color: var(--beige-arena);
+    color: var(--marron-medio);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+}
+
+.info-texto h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.info-texto p {
+    color: var(--texto-secundario);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.lista-detalles {
+    list-style: none;
+    margin-top: 1.2rem;
+}
+
+.lista-detalles li {
+    position: relative;
+    padding-left: 1.6rem;
+    margin-bottom: 0.6rem;
+    color: var(--marron-medio);
+    font-weight: 500;
+}
+
+.lista-detalles li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: var(--marron-suave);
+}
+
+.info-imagen img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: var(--sombra);
+    border: 6px solid var(--blanco);
+    transition: var(--transicion);
+}
+
+.info-imagen img:hover {
+    transform: translateY(-6px);
+}
+
+/* ==========================================================================
+   SECCIÓN DE VIDEO EN FORMATO WEB (.MP4 / .WEBM)
+   ========================================================================== */
+.seccion-video {
+    text-align: center;
+    background-color: var(--marron-medio);
+    color: var(--beige-claro);
+    padding: 4.5rem 2rem;
+}
+
+.seccion-video h2 {
+    color: var(--beige-claro);
+    font-size: 2.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.seccion-video p {
+    color: var(--beige-arena);
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.video-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    border: 4px solid var(--beige-arena);
+}
+
+.video-wrapper video {
+    width: 100%;
+    display: block;
+}
+
+/* ==========================================================================
+   FORMULARIO DE CONTACTO (ÚLTIMA SECCIÓN)
+   ========================================================================== */
+.seccion-contacto {
+    background-color: var(--beige-claro);
+    padding: 4.5rem 2rem;
+}
+
+.tarjeta-formulario {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: var(--blanco);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: var(--sombra);
+    border: 1px solid var(--beige-arena);
+}
+
+.tarjeta-formulario h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.tarjeta-formulario p {
+    text-align: center;
+    color: var(--texto-secundario);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.grupo-campo {
+    margin-bottom: 1.4rem;
+}
+
+.grupo-campo label {
+    display: block;
+    font-weight: 500;
+    color: var(--marron-oscuro);
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.grupo-campo input,
+.grupo-campo textarea {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border: 1px solid var(--beige-arena);
+    border-radius: 8px;
+    background-color: var(--beige-claro);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: var(--texto-principal);
+    transition: var(--transicion);
+}
+
+.grupo-campo input:focus,
+.grupo-campo textarea:focus {
+    outline: none;
+    border-color: var(--marron-suave);
+    background-color: var(--blanco);
+}
+
+.btn-enviar {
+    width: 100%;
+    background-color: var(--marron-oscuro);
+    color: var(--beige-claro);
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.btn-enviar:hover {
+    background-color: var(--marron-suave);
+}
+
+.mensaje-exito {
+    display: none;
+    margin-top: 1rem;
+    padding: 0.85rem;
+    background-color: var(--beige-medio);
+    border-left: 4px solid var(--marron-suave);
+    color: var(--marron-oscuro);
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   FOOTER INSTITUCIONAL (PIE DE PÁGINA)
+   ========================================================================== */
+.footer-institucional {
+    background-color: var(--marron-oscuro);
+    color: var(--beige-medio);
+    padding: 3.5rem 2rem 2rem;
+    text-align: center;
+    border-top: 5px solid var(--marron-suave);
+}
+
+.footer-contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.membrete-uba {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(228, 213, 199, 0.2);
+}
+
+.membrete-uba h4 {
+    color: var(--beige-claro);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+
+.datos-autor {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    color: var(--beige-arena);
+}
+
+.datos-autor strong {
+    color: var(--blanco);
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: rgba(243, 236, 225, 0.65);
+}
+
+/* ==========================================================================
+   DISEÑO RESPONSIVO
+   ========================================================================== */
+@media (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .bloque-info,
+    .bloque-info.invertido {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .bloque-info.invertido .info-imagen,
+    .bloque-info.invertido .info-texto {
+        order: initial;
+    }
+
+    .slide-contenido h1 {
+        font-size: 2.2rem;
+    }
+}

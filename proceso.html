@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso Artesanal | Bites Repostería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header-principal">
+        <nav class="navbar" aria-label="Navegación Principal">
+            <a href="index.html" class="logo">
+                BITES
+                <span>Repostería Artesanal</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="proceso.html" class="activo">Proceso Artesanal</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-secundario">
+            <h1>Nuestro Proceso Artesanal</h1>
+            <p>La repostería es química y paciencia. Conoce las tres etapas clave que garantizan la textura perfecta en cada postre de Bites.</p>
+        </section>
+
+        <!-- SECCIÓN SECUNDARIA 1 -->
+        <section class="contenedor">
+            <article class="bloque-info">
+                <div class="info-imagen">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80&fm=webp" alt="Pesaje y formulación de ingredientes">
+                </div>
+                <div class="info-texto">
+                    <span class="etiqueta-superior">Etapa 01</span>
+                    <h2>Formulación y Balance de Masas</h2>
+                    <p>Todo comienza con la medición exacta en balanza digital. En nuestras masas de chocolate incorporamos café recién preparado y una pizca de reducción de soya que actúa como potenciador natural de umami, resaltando las notas profundas del cacao sin dejar rastro salado.</p>
+                    <ul class="lista-detalles">
+                        <li>Estandarización de recetas por peso en gramos.</li>
+                        <li>Emulsión controlada de huevos y azúcares para dar brillo.</li>
+                        <li>Tamizado doble de harinas y cacao alcalino.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <!-- SECCIÓN SECUNDARIA 2 -->
+        <section class="seccion-alterna">
+            <div class="contenedor">
+                <article class="bloque-info invertido">
+                    <div class="info-imagen">
+                        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80&fm=webp" alt="Reposo en frío y horneado controlado">
+                    </div>
+                    <div class="info-texto">
+                        <span class="etiqueta-superior">Etapa 02</span>
+                        <h2>Reposo en Frío y Horneado Preciso</h2>
+                        <p>Nuestras galletas no van directo al horno: boleamos cada porción y la dejamos madurar en refrigeración durante 24 horas. Este proceso hidrata la harina uniformemente y permite que durante el horneado se forme un borde dorado y un corazón húmedo.</p>
+                        <ul class="lista-detalles">
+                            <li>Control de temperatura interna con termómetro de horno.</li>
+                            <li>Enfriamiento en rejilla para estabilizar la miga.</li>
+                            <li>Cremas cítricas cocinadas a fuego lento sin grumos.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN SECUNDARIA 3 -->
+        <section class="contenedor">
+            <article class="bloque-info">
+                <div class="info-imagen">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80&fm=webp" alt="Decoración final y empaque de postres">
+                </div>
+                <div class="info-texto">
+                    <span class="etiqueta-superior">Etapa 03</span>
+                    <h2>Acabado de Autor y Empacado Fresco</h2>
+                    <p>Una vez que cada pieza alcanza su temperatura óptima, realizamos el corte milimétrico de los brownies, el flambeado del merengue suizo en los pies de limón y parchita, y el empacado inmediato en cajas protectoras para preservar su aroma.</p>
+                    <ul class="lista-detalles">
+                        <li>Corte limpio con cuchilla térmica para bordes perfectos.</li>
+                        <li>Sellado higiénico con papel encerado de grado alimenticio.</li>
+                        <li>Entrega el mismo día del horneado.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <!-- ÚLTIMA SECCIÓN: FORMULARIO DE CONTACTO -->
+        <section id="contacto" class="seccion-contacto seccion-alterna">
+            <div class="tarjeta-formulario">
+                <h2>Programa tu Pedido Artesanal</h2>
+                <p>Trabajamos bajo pedido para garantizarte postres recién salidos del horno. Escríbenos aquí.</p>
+                <form id="form-contacto" action="#" method="post">
+                    <div class="grupo-campo">
+                        <label for="nombre-apellido">Nombre y Apellido:</label>
+                        <input type="text" id="nombre-apellido" name="nombre_apellido" placeholder="Ej. Andrés Ignacio Pérez" required>
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indícanos tu pedido o consulta sobre nuestro proceso..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                    <div id="mensaje-confirmacion" class="mensaje-exito">
+                        ¡Mensaje enviado con éxito! Pronto nos pondremos en contacto contigo.
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER / PIE DE PÁGINA -->
+    <footer class="footer-institucional">
+        <div class="footer-contenedor">
+            <div class="membrete-uba">
+                <h4>
+                    REPÚBLICA BOLIVARIANA DE VENEZUELA<br>
+                    UNIVERSIDAD BICENTENARIA DE ARAGUA<br>
+                    VICERRECTORADO ACADÉMICO<br>
+                    FACULTAD DE INGENIERÍA - ESCUELA DE INGENIERÍA DE SISTEMAS<br>
+                    SAN JOAQUÍN DE TURMERO - ESTADO ARAGUA
+                </h4>
+            </div>
+            <p class="datos-autor">
+                Desarrollado por: <strong>Victoria Valentina Pinto Sosa</strong> | C.I.: <strong>V-XX.XXX.XXX</strong>
+            </p>
+            <p class="copyright">
+                &copy; 2026 Bites Repostería Artesanal. Todos los derechos reservados. Prohibida su reproducción total o parcial.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Bites Repostería Artesanal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header-principal">
+        <nav class="navbar" aria-label="Navegación Principal">
+            <a href="index.html" class="logo">
+                BITES
+                <span>Repostería Artesanal</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="nosotros.html" class="activo">Nosotros</a></li>
+                <li><a href="proceso.html">Proceso Artesanal</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-secundario">
+            <h1>Nuestra Historia y Filosofía</h1>
+            <p>Descubre cómo nació Bites y la pasión familiar que impulsa cada receta que sale de nuestro horno.</p>
+        </section>
+
+        <!-- SECCIÓN SECUNDARIA 1 -->
+        <section class="contenedor">
+            <article class="bloque-info">
+                <div class="info-imagen">
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=80&fm=webp" alt="Trabajo en equipo horneando en Bites">
+                </div>
+                <div class="info-texto">
+                    <span class="etiqueta-superior">Origen Familiar</span>
+                    <h2>Un Proyecto Nacido en Casa</h2>
+                    <p>Bites surgió en Maracay como una iniciativa familiar entre primas apasionadas por la repostería de precisión. Lo que empezó como tardes de pruebas perfeccionando la galleta y el brownie ideal se transformó en una marca local reconocida por su consistencia y calidez.</p>
+                    <ul class="lista-detalles">
+                        <li>Recetas propias formuladas desde cero al gramo exacto.</li>
+                        <li>Atención cercana y personalizada en cada pedido.</li>
+                        <li>Compromiso con el emprendimiento gastronómico local.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <!-- SECCIÓN SECUNDARIA 2 -->
+        <section class="seccion-alterna">
+            <div class="contenedor">
+                <article class="bloque-info invertido">
+                    <div class="info-imagen">
+                        <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=900&q=80&fm=webp" alt="Cacao e ingredientes seleccionados">
+                    </div>
+                    <div class="info-texto">
+                        <span class="etiqueta-superior">Filosofía de Sabor</span>
+                        <h2>Ingredientes que Marcan la Diferencia</h2>
+                        <p>Rechazamos las esencias artificiales. En nuestra cocina trabajamos con cacao venezolano de origen, frutas naturales exprimidas al día y técnicas de contraste gastronómico que elevan los postres tradicionales a un nivel superior.</p>
+                        <ul class="lista-detalles">
+                            <li>Uso de café recién infusionado para potenciar el chocolate.</li>
+                            <li>Balance exacto de notas dulces, salinas y umami.</li>
+                            <li>Control riguroso de calidad en cada lote horneado.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN SECUNDARIA 3 -->
+        <section class="contenedor">
+            <article class="bloque-info">
+                <div class="info-imagen">
+                    <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=900&q=80&fm=webp" alt="Vitrina y presentación cálida de postres">
+                </div>
+                <div class="info-texto">
+                    <span class="etiqueta-superior">Nuestra Visión</span>
+                    <h2>Calidez en Cada Detalle</h2>
+                    <p>Nuestra identidad visual en tonos beige y marrones refleja la naturaleza de nuestros ingredientes: harina horneada, azúcar morena, mantequilla dorada y cacao puro. Queremos que cada caja de Bites transmita hogar y excelencia.</p>
+                    <ul class="lista-detalles">
+                        <li>Estética limpia, cálida y acogedora.</li>
+                        <li>Innovación constante en temporadas festivas.</li>
+                        <li>Pasión por convertir momentos cotidianos en celebraciones.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <!-- ÚLTIMA SECCIÓN: FORMULARIO DE CONTACTO -->
+        <section id="contacto" class="seccion-contacto seccion-alterna">
+            <div class="tarjeta-formulario">
+                <h2>Conecta con Nuestro Equipo</h2>
+                <p>¿Tienes alguna consulta sobre eventos, alianzas o pedidos especiales? Déjanos tu mensaje.</p>
+                <form id="form-contacto" action="#" method="post">
+                    <div class="grupo-campo">
+                        <label for="nombre-apellido">Nombre y Apellido:</label>
+                        <input type="text" id="nombre-apellido" name="nombre_apellido" placeholder="Ej. Valentina Rodríguez" required>
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos cómo podemos ayudarte..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                    <div id="mensaje-confirmacion" class="mensaje-exito">
+                        ¡Gracias por escribirnos! Te responderemos muy pronto.
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER / PIE DE PÁGINA -->
+    <footer class="footer-institucional">
+        <div class="footer-contenedor">
+            <div class="membrete-uba">
+                <h4>
+                    REPÚBLICA BOLIVARIANA DE VENEZUELA<br>
+                    UNIVERSIDAD BICENTENARIA DE ARAGUA<br>
+                    VICERRECTORADO ACADÉMICO<br>
+                    FACULTAD DE INGENIERÍA - ESCUELA DE INGENIERÍA DE SISTEMAS<br>
+                    SAN JOAQUÍN DE TURMERO - ESTADO ARAGUA
+                </h4>
+            </div>
+            <p class="datos-autor">
+                Desarrollado por: <strong>Victoria Valentina Pinto Sosa</strong> | C.I.: <strong>V-XX.XXX.XXX</strong>
+            </p>
+            <p class="copyright">
+                &copy; 2026 Bites Repostería Artesanal. Todos los derechos reservados. Prohibida su reproducción total o parcial.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

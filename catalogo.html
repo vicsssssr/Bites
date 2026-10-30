@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Bites Repostería Artesanal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header-principal">
+        <nav class="navbar" aria-label="Navegación Principal">
+            <a href="index.html" class="logo">
+                BITES
+                <span>Repostería Artesanal</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html" class="activo">Catálogo</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="proceso.html">Proceso Artesanal</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-secundario">
+            <h1>Nuestro Catálogo de Postres</h1>
+            <p>Conoce nuestras tres líneas de repostería artesanal diseñadas para compartir, regalar o disfrutar en cualquier ocasión.</p>
+        </section>
+
+        <!-- SECCIÓN SECUNDARIA 1 -->
+        <section class="contenedor">
+            <article class="bloque-info">
+                <div class="info-imagen">
+                    <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=900&q=80&fm=webp" alt="Colección de Galletas y Brownies de Bites">
+                </div>
+                <div class="info-texto">
+                    <span class="etiqueta-superior">Línea Cacao & Café</span>
+                    <h2>Galletas y Brownies Especiales</h2>
+                    <p>Nuestra línea enfocada en los amantes del chocolate profundo. Trabajamos con porcentajes altos de cacao y nuestra técnica de realce con café recién colado para lograr bocados intensos y aromáticos.</p>
+                    <ul class="lista-detalles">
+                        <li>Pack de 6 Galletas Clásicas con Chispas de Chocolate.</li>
+                        <li>Caja de 8 Fudgy Brownies con corteza brillante.</li>
+                        <li>Brookie Box: combinación mitad brownie y mitad galleta.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <!-- SECCIÓN SECUNDARIA 2 -->
+        <section class="seccion-alterna">
+            <div class="contenedor">
+                <article class="bloque-info invertido">
+                    <div class="info-imagen">
+                        <img src="https://images.unsplash.com/photo-1535920527002-b35e96722eb9?auto=format&fit=crop&w=900&q=80&fm=webp" alt="Pies artesanales de Limón y Parchita">
+                    </div>
+                    <div class="info-texto">
+                        <span class="etiqueta-superior">Línea Cítrica</span>
+                        <h2>Pies Clásicos de Limón y Parchita</h2>
+                        <p>Elaborados con frutas frescas seleccionadas. La base crujiente de galleta dorada en mantequilla sostiene un relleno cremoso y firme, coronado con picos de merengue suizo tostado al soplete.</p>
+                        <ul class="lista-detalles">
+                            <li>Pie entero de 22 cm (rinde de 8 a 10 porciones).</li>
+                            <li>Dúo de Mini Pies individuales de Limón y Parchita.</li>
+                            <li>Tartaletas de degustación para mesas de postres.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN SECUNDARIA 3 -->
+        <section class="contenedor">
+            <article class="bloque-info">
+                <div class="info-imagen">
+                    <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?auto=format&fit=crop&w=900&q=80&fm=webp" alt="Cajas de degustación Bites">
+                </div>
+                <div class="info-texto">
+                    <span class="etiqueta-superior">Cajas de Regalo</span>
+                    <h2>Bites Tasting Boxes</h2>
+                    <p>Si no puedes decidirte por uno solo, nuestras cajas mixtas reúnen los favoritos de la casa en una presentación elegante en tonos beige y cacao, ideal para cumpleaños, aniversarios y detalles especiales.</p>
+                    <ul class="lista-detalles">
+                        <li>Incluye galletas, cuadrados de brownie y mini pies.</li>
+                        <li>Tarjeta personalizada escrita a mano sin costo adicional.</li>
+                        <li>Disponibilidad bajo reserva con 24 horas de anticipación.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <!-- ÚLTIMA SECCIÓN: FORMULARIO DE CONTACTO -->
+        <section id="contacto" class="seccion-contacto seccion-alterna">
+            <div class="tarjeta-formulario">
+                <h2>Solicita Presupuesto o Pedido</h2>
+                <p>Escríbenos qué opción del catálogo te gustaría encargar y te contactaremos de inmediato.</p>
+                <form id="form-contacto" action="#" method="post">
+                    <div class="grupo-campo">
+                        <label for="nombre-apellido">Nombre y Apellido:</label>
+                        <input type="text" id="nombre-apellido" name="nombre_apellido" placeholder="Ej. Carlos Eduardo Méndez" required>
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí los productos del catálogo que deseas ordenar..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                    <div id="mensaje-confirmacion" class="mensaje-exito">
+                        ¡Gracias por tu solicitud! Pronto nos comunicaremos contigo.
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER / PIE DE PÁGINA -->
+    <footer class="footer-institucional">
+        <div class="footer-contenedor">
+            <div class="membrete-uba">
+                <h4>
+                    REPÚBLICA BOLIVARIANA DE VENEZUELA<br>
+                    UNIVERSIDAD BICENTENARIA DE ARAGUA<br>
+                    VICERRECTORADO ACADÉMICO<br>
+                    FACULTAD DE INGENIERÍA - ESCUELA DE INGENIERÍA DE SISTEMAS<br>
+                    SAN JOAQUÍN DE TURMERO - ESTADO ARAGUA
+                </h4>
+            </div>
+            <p class="datos-autor">
+                Desarrollado por: <strong>Victoria Valentina Pinto Sosa</strong> | C.I.: <strong>V-XX.XXX.XXX</strong>
+            </p>
+            <p class="copyright">
+                &copy; 2026 Bites Repostería Artesanal. Todos los derechos reservados. Prohibida su reproducción total o parcial.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
