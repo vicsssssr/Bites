@@ -1,7 +1,4 @@
-/* ==========================================================================
-   BITES - REPOSTERÍA ARTESANAL
-   Estilos CSS3 Puros (Sin Frameworks) - Paleta Beige & Marrones
-   ========================================================================== */
+/* Estilos CSS3 */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -34,7 +31,6 @@ body {
     background-color: var(--beige-claro);
     color: var(--texto-principal);
     line-height: 1.7;
-    /* Textura sutil de grano en tonos beige */
     background-image: radial-gradient(rgba(164, 113, 72, 0.07) 1px, transparent 0);
     background-size: 24px 24px;
 }
@@ -45,9 +41,7 @@ h1, h2, h3, h4 {
     line-height: 1.3;
 }
 
-/* ==========================================================================
-   NAVBAR (MENÚ DE NAVEGACIÓN UNIFORME Y JERÁRQUICO)
-   ========================================================================== */
+/* NAVBAR (MENÚ DE NAVEGACIÓN UNIFORME Y JERÁRQUICO) */
 .header-principal {
     background-color: var(--marron-oscuro);
     position: sticky;
@@ -107,9 +101,7 @@ h1, h2, h3, h4 {
     color: var(--blanco);
 }
 
-/* ==========================================================================
-   SLIDER / CARRUSEL DE IMÁGENES
-   ========================================================================== */
+/* SLIDER / CARRUSEL DE IMÁGENES */
 .slider-contenedor {
     position: relative;
     max-width: 100%;
@@ -232,9 +224,7 @@ h1, h2, h3, h4 {
     transform: scale(1.2);
 }
 
-/* ==========================================================================
-   ENCABEZADO PÁGINAS SECUNDARIAS
-   ========================================================================== */
+/* ENCABEZADO PÁGINAS SECUNDARIAS */
 .banner-secundario {
     background: linear-gradient(rgba(58, 34, 18, 0.75), rgba(58, 34, 18, 0.75)),
                 url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1400&q=80&fm=webp') center/cover;
@@ -255,9 +245,7 @@ h1, h2, h3, h4 {
     margin: 0 auto;
 }
 
-/* ==========================================================================
-   SECCIONES DE INFORMACIÓN (IMAGEN + TEXTO)
-   ========================================================================== */
+/* SECCIONES DE INFORMACIÓN (IMAGEN + TEXTO) */
 .contenedor {
     max-width: 1150px;
     margin: 0 auto;
@@ -343,9 +331,7 @@ h1, h2, h3, h4 {
     transform: translateY(-6px);
 }
 
-/* ==========================================================================
-   SECCIÓN DE VIDEO EN FORMATO WEB (.MP4 / .WEBM)
-   ========================================================================== */
+/* SECCIÓN DE VIDEO EN FORMATO WEB (.MP4 / .WEBM) */
 .seccion-video {
     text-align: center;
     background-color: var(--marron-medio);
@@ -379,9 +365,7 @@ h1, h2, h3, h4 {
     display: block;
 }
 
-/* ==========================================================================
-   FORMULARIO DE CONTACTO (ÚLTIMA SECCIÓN)
-   ========================================================================== */
+/* FORMULARIO DE CONTACTO (ÚLTIMA SECCIÓN) */
 .seccion-contacto {
     background-color: var(--beige-claro);
     padding: 4.5rem 2rem;
@@ -470,9 +454,7 @@ h1, h2, h3, h4 {
     border-radius: 4px;
 }
 
-/* ==========================================================================
-   FOOTER INSTITUCIONAL (PIE DE PÁGINA)
-   ========================================================================== */
+/* FOOTER INSTITUCIONAL */
 .footer-institucional {
     background-color: var(--marron-oscuro);
     color: var(--beige-medio);
@@ -516,9 +498,7 @@ h1, h2, h3, h4 {
     color: rgba(243, 236, 225, 0.65);
 }
 
-/* ==========================================================================
-   DISEÑO RESPONSIVO
-   ========================================================================== */
+/* DISEÑO RESPONSIVO */
 @media (max-width: 850px) {
     .navbar {
         flex-direction: column;

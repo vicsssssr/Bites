@@ -1,9 +1,7 @@
-/* ==========================================================================
-   BITES - LÓGICA DEL CARRUSEL Y INTERACTIVIDAD EN JAVASCRIPT PURO
-   ========================================================================== */
+/* BITES - LÓGICA DEL CARRUSEL Y INTERACTIVIDAD EN JAVASCRIPT PURO */
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Control del Slider / Carrusel (solo si existe en la vista actual)
+    // 1. Control del Slider / Carrusel 
     const slides = document.querySelectorAll(".slide");
     const indicadores = document.querySelectorAll(".indicador");
     const btnPrev = document.querySelector(".slider-btn.prev");
